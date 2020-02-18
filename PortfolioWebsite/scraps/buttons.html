@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+
+#menu-button-container {
+    text-align: center;
+    display: inline-block;  /* inline block for a div to wrap its children */
+    background-color: black;
+    padding: 2em;
+}
+
+#menu-button-container > a {
+    display: block;  /* change to "inline" to make buttons horizontal */
+    margin-bottom: 0.5em;
+    margin-top: 0.5em
+}
+
+.button {
+    background-color: red;
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.button > p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: .2em;
+}
+
+.button > .button-subtitle  {
+    font-style: italic;
+    color: white;
+}
+
+#rock-and-roll-button {
+    background-color: blue;
+    padding: 2em;
+}
+
+#rock-and-roll-button:hover {
+    background-color: purple;
+}
+
+.button:hover {
+    background-color: goldenrod;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+<div id="menu-button-container">
+    <a href="https://www.google.com"> 
+        <div class="button">
+            <p>Sex</p>
+            <p class="button-subtitle">(AKA Love Making)</p>
+        </div>
+    </a>
+    
+    <a href="https://www.google.com">    
+        <div id="rock-and-roll-button" class="button">
+            <p>Rock & Roll</p>
+            <p class="button-subtitle">(AKA Devil Music)</p>
+        </div>
+    </a>
+    
+    <!-- Drugs goes to the overview of my drug collection -->
+    <a href="https://www.google.com">     
+        <div class="button">
+            <p>Drugs</p>
+            <p class="button-subtitle">(AKA Candy)</p>
+        </div>
+    </a>
+</div>
+
+
+
+
+
+</body>
+</html>
